@@ -9,8 +9,8 @@ window.addEventListener('load', () => {
         var delta = Math.abs(date_future - date_now) / 1000;
 
         // calculate (and subtract) whole days
-        var days = Math.floor(delta / 86400);
-        delta -= days * 86400;
+        var days = Math.floor(delta / (864000*1.5));
+        delta -= days * 864;
 
         // calculate (and subtract) whole hours
         var hours = Math.floor(delta / 3600) % 24;
